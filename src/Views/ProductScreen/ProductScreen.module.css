@@ -1,0 +1,84 @@
+.root {
+  @apply my-8;
+}
+.formFields {
+  @apply mb-4;
+}
+.spinner {
+  @apply flex justify-center items-center;
+}
+.formFields input,
+.formFields textarea,
+.formFields select {
+  @apply w-full bg-gray-50 border-2 border-gray-50 rounded-md p-2 focus:outline-none focus:bg-white focus:border-primaryColor;
+}
+.placeOrderButton {
+  @apply w-full shadow focus:outline-none hover:bg-primaryHoverColor bg-primaryColor text-white p-2 rounded-md;
+}
+.placeOrderButton:disabled {
+  @apply bg-gray-300 cursor-not-allowed;
+}
+.productTitleContainer {
+  @apply px-4;
+}
+.productTitle {
+  @apply text-2xl text-primaryColor mb-8 mt-8 md:mt-0;
+}
+.slider2 {
+  @apply w-full my-2;
+}
+.productImageContainer {
+  max-width: 100%;
+}
+.productImageContainer img {
+  @apply w-full object-contain;
+}
+.slider2 img {
+  @apply object-contain p-1;
+  width: 100px;
+}
+@screen md {
+  .productImageContainer {
+    height: 480px;
+  }
+  .productImageContainer img {
+    height: 360px;
+  }
+  .slider2 img {
+    height: 100px;
+  }
+}
+@screen lg {
+  .productImageContainer {
+    width: 480px;
+    height: 480px;
+  }
+}
+
+.descriptionContainer {
+  @apply mt-4;
+}
+.description {
+  @apply my-4;
+}
+.price {
+  @apply text-xl font-bold;
+}
+.delivery {
+  @apply text-base mt-3 font-bold;
+}
+.shipment {
+  @apply text-sm mt-3;
+}
+.IconButton {
+  @apply focus:outline-none text-primaryColor;
+}
+.qtySection {
+  @apply flex items-center;
+}
+.productForm {
+  @apply my-6 md:my-0;
+}
+.thankYouMessage {
+  @apply text-base md:text-2xl text-green-500 font-bold;
+}

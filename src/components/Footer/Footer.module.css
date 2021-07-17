@@ -1,0 +1,36 @@
+.root {
+  @apply p-8 bg-gray-100 relative;
+  z-index: 1201;
+}
+.whatsAppLink {
+  @apply fixed bottom-8 right-8 z-10;
+}
+.whatsAppLink button {
+  background-color: #25d366;
+}
+.whatsAppLink button:hover {
+  background-color: #25d366;
+}
+.iconButton:focus {
+  outline: none;
+}
+.whatsAppIcon {
+  @apply text-white;
+}
+.phoneIcon {
+  @apply my-3;
+}
+.footerLinks {
+  @apply mt-4 md:mt-0;
+}
+
+.footerLinks li {
+  @apply mb-3 no-underline;
+}
+.footerLinks li a {
+  @apply cursor-pointer hover:no-underline text-black font-bold;
+}
+
+.copyrights {
+  @apply text-center bg-gray-700 text-white py-3;
+}

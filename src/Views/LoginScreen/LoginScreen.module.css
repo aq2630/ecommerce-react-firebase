@@ -1,0 +1,12 @@
+.root {
+  @apply flex justify-center items-center;
+}
+.loginFormFields {
+  @apply md:p-24 p-4 m-8 rounded-md shadow-md;
+}
+.loginFormFields input {
+  @apply w-full mb-4 bg-gray-50 border-2 border-gray-50 rounded-md p-2 focus:outline-none focus:bg-white focus:border-primaryColor;
+}
+.loginFormFields button {
+  @apply w-full shadow focus:outline-none hover:bg-primaryHoverColor bg-primaryColor text-white p-2 rounded-md;
+}

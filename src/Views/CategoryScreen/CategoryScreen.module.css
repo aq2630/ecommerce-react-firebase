@@ -1,0 +1,20 @@
+.productsCards {
+  @apply flex flex-wrap justify-center;
+}
+.productsContainer {
+  @apply my-8;
+}
+.topProducts {
+  @apply text-lg md:text-3xl text-center font-bold mb-4;
+}
+.loading {
+  @apply flex justify-center items-center w-full py-20;
+}
+@media only screen and (max-width: 600px) {
+}
+@media only screen and (min-width: 600px) {
+}
+@media only screen and (min-width: 960px) {
+}
+@media only screen and (min-width: 1280px) {
+}

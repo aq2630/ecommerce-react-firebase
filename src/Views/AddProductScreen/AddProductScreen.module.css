@@ -1,0 +1,28 @@
+.root {
+  @apply flex justify-center items-center max-w-screen-md mx-auto;
+}
+.progress > .MuiLinearProgress-barColorPrimary {
+  @apply bg-primaryColor text-primaryColor;
+}
+.backLink {
+  @apply mb-6;
+}
+.addProductForm {
+  @apply md:p-12 p-4 m-8 rounded-md shadow-md w-full;
+}
+.addProductForm input,
+.addProductForm textarea,
+.addProductForm select {
+  @apply w-full mb-4 bg-gray-50 border-2 border-gray-50 rounded-md p-2 focus:outline-none focus:bg-white focus:border-primaryColor;
+}
+.addProductForm button,
+.loginButton {
+  @apply w-full shadow focus:outline-none hover:bg-primaryHoverColor bg-primaryColor text-white p-2 rounded-md;
+}
+.loginButton {
+  @apply w-full shadow focus:outline-none hover:bg-primaryHoverColor bg-primaryColor text-white p-2 rounded-md;
+}
+
+.addProductForm button:disabled {
+  @apply cursor-not-allowed bg-gray-400;
+}

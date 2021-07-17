@@ -1,0 +1,9 @@
+.root {
+  min-height: 80vh;
+}
+.mainContainer {
+  @apply my-8;
+}
+.spacer {
+  min-height: 80px;
+}

@@ -1,0 +1,32 @@
+.mainContainer {
+  @apply mx-auto my-8;
+}
+.backLink {
+  @apply mb-6;
+}
+.productGrid {
+  @apply grid grid-cols-1 gap-1 rounded-md;
+}
+@screen md {
+  .productGrid {
+    grid-template-columns: 100px 1fr 100px 64px;
+  }
+}
+.productGrid div {
+  @apply bg-gray-200 rounded-md p-2 md:py-4 md:px-2;
+}
+.twoCol {
+  @apply col-span-2 w-full;
+}
+.productHeading {
+  @apply font-bold my-4;
+}
+.productImage {
+  @apply w-20 h-20;
+}
+.iconBox {
+  @apply w-16;
+}
+.productRemoveIcon {
+  @apply focus:outline-none text-red-600;
+}

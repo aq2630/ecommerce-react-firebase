@@ -1,0 +1,21 @@
+.productRoot {
+  @apply flex flex-col rounded-md m-2 md:m-4 cursor-pointer;
+}
+.productImage {
+  @apply mx-auto;
+}
+.productImage img {
+  @apply sm:w-80 sm:h-64 h-32 w-40 max-w-full object-contain;
+}
+.productTitle {
+  @apply font-bold text-sm md:text-base mb-2;
+}
+.productPrice {
+  @apply text-primaryColor font-bold;
+}
+.productTextArea {
+  @apply p-2 md:p-4;
+}
+.buyButton {
+  @apply w-full mt-4 shadow focus:outline-none hover:bg-primaryHoverColor bg-primaryColor text-white p-2 rounded-md;
+}

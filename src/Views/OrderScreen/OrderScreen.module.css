@@ -1,0 +1,32 @@
+.root {
+  @apply my-8;
+}
+.spinner {
+  @apply flex justify-center items-center;
+}
+.backLink {
+  @apply mb-6;
+}
+.orderGrid {
+  @apply grid grid-cols-1 gap-1 rounded-md justify-center items-center w-full;
+}
+@screen md {
+  .orderGrid {
+    grid-template-columns: 80px 100px 1fr 100px 50px 1fr 200px 64px;
+  }
+}
+.orderGrid div {
+  @apply bg-gray-200 rounded-md p-2 md:py-6 md:px-2;
+}
+.twoCol {
+  @apply col-span-2;
+}
+.orderHeading {
+  @apply font-bold my-4;
+}
+.orderRemoveIcon {
+  @apply focus:outline-none text-red-600 py-0;
+}
+.MuiIconButton-root {
+  padding: 0 12px;
+}

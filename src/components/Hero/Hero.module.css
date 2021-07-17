@@ -1,0 +1,33 @@
+.HeroRoot {
+}
+.root {
+  @apply mx-auto flex;
+}
+.HeroText {
+  @apply px-12 py-8 md:py-20;
+}
+.banner {
+  @apply max-w-full object-contain md:object-cover mx-auto;
+}
+@screen md {
+  .banner {
+    height: 400px;
+  }
+}
+.HeroLottie {
+  @apply p-12;
+}
+.HeroTitle {
+  @apply text-xl md:text-5xl font-bold mb-8;
+}
+.HeroDescription {
+  @apply text-base md:text-2xl font-bold;
+}
+@media only screen and (max-width: 600px) {
+}
+@media only screen and (min-width: 600px) {
+}
+@media only screen and (min-width: 960px) {
+}
+@media only screen and (min-width: 1280px) {
+}

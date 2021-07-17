@@ -1,0 +1,4 @@
+.mainContainer {
+  @apply mx-auto my-8;
+  min-height: 70vh;
+}
