@@ -1,0 +1,115 @@
+[debug] [2021-07-18T10:27:43.852Z] ----------------------------------------------------------------------
+[debug] [2021-07-18T10:27:43.855Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Abdul Qadir\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2021-07-18T10:27:43.856Z] CLI Version:   9.16.0
+[debug] [2021-07-18T10:27:43.856Z] Platform:      win32
+[debug] [2021-07-18T10:27:43.856Z] Node Version:  v14.15.1
+[debug] [2021-07-18T10:27:43.858Z] Time:          Sun Jul 18 2021 15:27:43 GMT+0500 (Pakistan Standard Time)
+[debug] [2021-07-18T10:27:43.858Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-07-18T10:27:43.862Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2021-07-18T10:27:43.995Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-07-18T10:27:43.995Z] > authorizing via signed-in user (a.qadir2630@gmail.com)
+[debug] [2021-07-18T10:27:43.995Z] [iam] checking project hashtag-33eb4 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2021-07-18T10:27:43.998Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-07-18T10:27:43.998Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-07-18T10:27:44.332Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Sun, 18 Jul 2021 10:27:46 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-07-18T10:27:44.367Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/hashtag-33eb4:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2021-07-18T10:28:05.401Z] [iam] error while checking permissions, command may fail: FirebaseError: Server Error. connect ETIMEDOUT 142.250.180.42:443
+[debug] [2021-07-18T10:28:05.403Z] > refreshing access token with scopes: []
+[debug] [2021-07-18T10:28:05.403Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-07-18T10:28:05.734Z] <<< HTTP RESPONSE 200 {"date":"Sun, 18 Jul 2021 10:28:08 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-07-18T10:28:05.768Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/hashtag-33eb4 [none]
+[debug] [2021-07-18T10:28:06.190Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/hashtag-33eb4 200
+[debug] [2021-07-18T10:28:06.191Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/hashtag-33eb4 {"projectId":"hashtag-33eb4","projectNumber":"252763497085","displayName":"hashtag","name":"projects/hashtag-33eb4","resources":{"hostingSite":"hashtag-33eb4","storageBucket":"hashtag-33eb4.appspot.com","locationId":"us-central"},"state":"ACTIVE"}
+[info] 
+[info] === Deploying to 'hashtag-33eb4'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2021-07-18T10:28:06.203Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-07-18T10:28:06.203Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-07-18T10:28:06.570Z] <<< HTTP RESPONSE 200 {"date":"Sun, 18 Jul 2021 10:28:09 GMT","pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-07-18T10:28:06.605Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/hashtag-33eb4/versions  
+ {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2021-07-18T10:28:28.068Z] Error: connect ETIMEDOUT 216.58.209.138:443
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1146:16)
+[error] 
+[error] Error: Server Error. connect ETIMEDOUT 216.58.209.138:443
+[debug] [2021-07-18T10:29:05.109Z] ----------------------------------------------------------------------
+[debug] [2021-07-18T10:29:05.113Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Abdul Qadir\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2021-07-18T10:29:05.114Z] CLI Version:   9.16.0
+[debug] [2021-07-18T10:29:05.114Z] Platform:      win32
+[debug] [2021-07-18T10:29:05.114Z] Node Version:  v14.15.1
+[debug] [2021-07-18T10:29:05.115Z] Time:          Sun Jul 18 2021 15:29:05 GMT+0500 (Pakistan Standard Time)
+[debug] [2021-07-18T10:29:05.116Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-07-18T10:29:05.120Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2021-07-18T10:29:05.245Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-07-18T10:29:05.246Z] > authorizing via signed-in user (a.qadir2630@gmail.com)
+[debug] [2021-07-18T10:29:05.246Z] [iam] checking project hashtag-33eb4 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2021-07-18T10:29:05.248Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/hashtag-33eb4:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2021-07-18T10:29:06.074Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2021-07-18T10:29:06.074Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2021-07-18T10:29:06.847Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sun, 18 Jul 2021 10:29:09 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1190","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-07-18T10:29:06.850Z] > refreshing access token with scopes: []
+[debug] [2021-07-18T10:29:06.851Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-07-18T10:29:27.909Z] Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+[debug] [2021-07-18T10:29:48.948Z] FirebaseError: Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+    at invalidCredentialError (C:\Users\Abdul Qadir\AppData\Roaming\npm\node_modules\firebase-tools\lib\auth.js:141:12)
+    at refreshTokens (C:\Users\Abdul Qadir\AppData\Roaming\npm\node_modules\firebase-tools\lib\auth.js:448:15)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async Client.getAccessToken (C:\Users\Abdul Qadir\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:144:23)
+    at async Client.addAuthHeader (C:\Users\Abdul Qadir\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:135:21)
+    at async Client.request (C:\Users\Abdul Qadir\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:93:34)
+    at async Object.getFirebaseProject (C:\Users\Abdul Qadir\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:290:21)
+    at async Object.getDefaultHostingSite (C:\Users\Abdul Qadir\AppData\Roaming\npm\node_modules\firebase-tools\lib\getDefaultHostingSite.js:8:21)
+    at async requireHostingSite (C:\Users\Abdul Qadir\AppData\Roaming\npm\node_modules\firebase-tools\lib\requireHostingSite.js:9:18)
+    at async Object.fn (C:\Users\Abdul Qadir\AppData\Roaming\npm\node_modules\firebase-tools\lib\commands\deploy.js:65:9)
+    at async C:\Users\Abdul Qadir\AppData\Roaming\npm\node_modules\firebase-tools\lib\command.js:169:17
+[error] 
+[error] Error: Failed to get Firebase project hashtag-33eb4. Please make sure the project exists and your account has permission to access it.
+[debug] [2021-07-18T10:40:21.177Z] ----------------------------------------------------------------------
+[debug] [2021-07-18T10:40:21.181Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Abdul Qadir\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2021-07-18T10:40:21.182Z] CLI Version:   9.16.0
+[debug] [2021-07-18T10:40:21.182Z] Platform:      win32
+[debug] [2021-07-18T10:40:21.182Z] Node Version:  v14.15.1
+[debug] [2021-07-18T10:40:21.192Z] Time:          Sun Jul 18 2021 15:40:21 GMT+0500 (Pakistan Standard Time)
+[debug] [2021-07-18T10:40:21.193Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-07-18T10:40:21.291Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-07-18T10:40:21.291Z] > authorizing via signed-in user (a.qadir2630@gmail.com)
+[debug] [2021-07-18T10:40:21.292Z] [iam] checking project hashtag-33eb4 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2021-07-18T10:40:21.295Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/hashtag-33eb4:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2021-07-18T10:40:22.869Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sun, 18 Jul 2021 10:40:25 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1188","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-07-18T10:40:22.873Z] > refreshing access token with scopes: []
+[debug] [2021-07-18T10:40:22.873Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-07-18T10:40:43.919Z] Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+[debug] [2021-07-18T10:41:04.980Z] FirebaseError: Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+    at invalidCredentialError (C:\Users\Abdul Qadir\AppData\Roaming\npm\node_modules\firebase-tools\lib\auth.js:141:12)
+    at refreshTokens (C:\Users\Abdul Qadir\AppData\Roaming\npm\node_modules\firebase-tools\lib\auth.js:448:15)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async Client.getAccessToken (C:\Users\Abdul Qadir\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:144:23)
+    at async Client.addAuthHeader (C:\Users\Abdul Qadir\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:135:21)
+    at async Client.request (C:\Users\Abdul Qadir\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:93:34)
+    at async Object.getFirebaseProject (C:\Users\Abdul Qadir\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:290:21)
+    at async Object.getDefaultHostingSite (C:\Users\Abdul Qadir\AppData\Roaming\npm\node_modules\firebase-tools\lib\getDefaultHostingSite.js:8:21)
+    at async requireHostingSite (C:\Users\Abdul Qadir\AppData\Roaming\npm\node_modules\firebase-tools\lib\requireHostingSite.js:9:18)
+    at async Object.fn (C:\Users\Abdul Qadir\AppData\Roaming\npm\node_modules\firebase-tools\lib\commands\deploy.js:65:9)
+    at async C:\Users\Abdul Qadir\AppData\Roaming\npm\node_modules\firebase-tools\lib\command.js:169:17
+[error] 
+[error] Error: Failed to get Firebase project hashtag-33eb4. Please make sure the project exists and your account has permission to access it.

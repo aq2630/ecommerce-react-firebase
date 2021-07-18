@@ -116,7 +116,7 @@ const Header = (props) => {
           >
             <CloseIcon className={classes.closeIcon} />
           </IconButton>
-          <div className={classes.drawerMenu}>
+          <div className={classes.drawerMenu}  onClick={handleDrawer}>
             <ul>{navLinks}</ul>
           </div>
         </div>
